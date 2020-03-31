@@ -17,14 +17,9 @@ def assign_rooms(attendees)
   room_assignments = []
   room_numbers.each_with_index do |name, room| room_assignments << "Hello, #{name}! You'll be assigned to room #{room}!"
  end
+ room_assignments
+ end
  
- def hamburger(toppings)
-  my_statements = []
-  toppings.each do |topping|
-    my_statements << "I love #{topping} on my burgers!"
-  end
-  my_statements
-end
   
 def printer
   
