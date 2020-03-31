@@ -11,13 +11,20 @@ def batch_badge_creator(attendees)
   attendees.map{|name| badges = ("Hello, my name is #{name}.")}
 end
 
+room_numbers = [1, 2, 3, 4, 5, 6, 7]
 
 def assign_rooms(attendees)
-  room_numbers = [1, 2, 3, 4, 5, 6, 7]
   room_assignments = []
-  room_numbers.each_with_index{|name, room| room_assignments = ("Hello, #{name}! You'll be assigned to room #{room}!")}
+  room_numbers.each_with_index do |name, room| room_assignments << "Hello, #{name}! You'll be assigned to room #{room}!"
  end
  
+ def hamburger(toppings)
+  my_statements = []
+  toppings.each do |topping|
+    my_statements << "I love #{topping} on my burgers!"
+  end
+  my_statements
+end
   
 def printer
   
